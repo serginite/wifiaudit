@@ -1,0 +1,42 @@
+cd "C:\Users\serginite\Documents\BACKUP WIFI AUDIT APP FOR GITHUB"
+
+@'
+# build outputs
+x64/
+Debug/
+Release/
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.log
+.vs/
+*.vcxproj.user
+WifiAudit/
+
+# scan outputs — NEVER commit these
+Results/
+Tests/
+*.pcap
+*.pcapng
+*.hc22000
+*.cap
+cracked.txt
+my_wifi.txt
+neighbors.txt
+rssi_timeline.html
+
+# wordlists and personal notes
+Wordlists/
+*.txt
+!README.md
+
+# backups and temp exports
+*BACKUP*.cpp
+deepseek_*.cpp
+*.bak
+
+# temp / system
+Thumbs.db
+desktop.ini
+'@ | Set-Content -Path ".gitignore" -Encoding UTF8
